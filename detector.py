@@ -1,6 +1,3 @@
-
-### SRI KANIPAKALA COVID-19 project 2020
-
 import cv2
 import numpy as np
 import time
