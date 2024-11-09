@@ -24,4 +24,4 @@ Using python to train and recognize faces
  
  STEP 3: Run the Trainer.py to analyze the JPG pictures and create YML file. 
  
- STEP 3: Run the detector.py to begin facial detectio4
+ STEP 4: Run the detector.py to begin facial recognition.
