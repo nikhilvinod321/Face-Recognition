@@ -26,7 +26,7 @@ def getImagesAndLabels(path):
         if len(parts) >= 2:
             user_name = parts[0] 
             user_id = int(parts[1].replace("ID", "")) 
-            name_map[user_id] = user_name  # Save user name with ID in the dictionary
+            name_map[user_id] = user_name  
         
         print(f"User Name: {user_name}, ID: {user_id}")
         faces = detector.detectMultiScale(imageNp)
@@ -44,7 +44,6 @@ recognizer.train(faces, np.array(Ids))
 recognizer.save('Trainer/trainner.yml')
 print('[!!!] Image Analysis Complete!')
 
-# Save name map to a .npy file
 os.makedirs('Trainer', exist_ok=True)
 np.save('Trainer/names.npy', name_map)
 print("names.npy file saved successfully with ID-to-name mappings.")
